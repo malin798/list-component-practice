@@ -17,7 +17,8 @@ export const App = () => {
       id: "3",
       title: "Title 3",
       subtitle: "Subtitle 3",
-      avatar: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-512.png"
+      avatar: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-512.png",
+      textRight: "Meta"
     },
     {
       id: "4",
@@ -27,7 +28,7 @@ export const App = () => {
       iconRight: "https://image.flaticon.com/icons/svg/512/512222.svg"
     }
   ]
-  
+
   return (
     <main>
       < ListContainer listContent={ListContent}/>

@@ -37,10 +37,16 @@ export const ListItem = ({listItem}) => {
       {listItem.iconRight &&
       <div 
         style={{backgroundImage: `url('${listItem.iconRight}')`}}
-        className="list-image-right">
+        className="list-image-right right-image-size">
       </div>
       }
-      
+
+      {listItem.textRight &&
+        <div className="list-image-right">
+          {listItem.textRight}
+        </div>
+      }
+
     </div>
   )
 }
