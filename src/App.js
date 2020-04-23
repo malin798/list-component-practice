@@ -11,7 +11,7 @@ export const App = () => {
     {
       id: "2",
       title: "Title 2",
-      subtitle: "Subtitle 2"  
+      subtitle: "Subtitle 2", 
     },
     {
       id: "3",
@@ -23,9 +23,11 @@ export const App = () => {
       id: "4",
       title: "Title 4",
       subtitle: "Subtitle 4",
-      icon: "🧡"
+      icon: "🧡",
+      iconRight: "https://image.flaticon.com/icons/svg/512/512222.svg"
     }
   ]
+  
   return (
     <main>
       < ListContainer listContent={ListContent}/>

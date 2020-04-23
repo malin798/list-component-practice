@@ -2,31 +2,45 @@ import React from 'react'
 
 export const ListItem = ({listItem}) => {
   return (
+
     <div className="list-item">
-      {listItem.avatar &&
-       <div 
-        style={{backgroundImage: `url('${listItem.avatar}')`}}
-        className="list-item-image">
-        </div>
-      }
-      {listItem.icon &&
-       <div 
-        className="list-item-image">
-          <span>{listItem.icon}</span>
-        </div>
-      }
+
       <div className="list-item-header">
-        {listItem.title && 
-          <h2>
-            {listItem.title}
-          </h2>
+
+        {listItem.avatar &&
+          <div 
+          style={{backgroundImage: `url('${listItem.avatar}')`}}
+          className="list-image-left">
+          </div>
         }
-        {listItem.subtitle &&
-        <p>
-          {listItem.subtitle}
-          </p>
+
+        {listItem.icon &&
+          <div className="list-image-left">
+            <span>{listItem.icon}</span>
+          </div>
         }
+
+        <div className="list-item-text">
+          {listItem.title && 
+            <h2>
+              {listItem.title}
+            </h2>
+          }
+          {listItem.subtitle &&
+            <p>
+              {listItem.subtitle}
+            </p>
+          }
+        </div>
       </div>
+
+      {listItem.iconRight &&
+      <div 
+        style={{backgroundImage: `url('${listItem.iconRight}')`}}
+        className="list-image-right">
+      </div>
+      }
+      
     </div>
   )
 }
